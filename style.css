@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 *::before,
 *,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -19,22 +25,98 @@
   position: fixed;
 }
 
-.container .content-left {
+.container .left .content-left {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
   align-items: center;
+  position: relative;
+}
+
+.content-left .profile-image {
+  width: 250px;
+  border-radius: 50%;
+  display: flex;
+  border: 0.5px solid black;
+  object-fit: cover;
+  display: flex;
+  margin-left: 30px;
+}
+
+.profile-image img {
+  width: 250px;
+}
+
+.content-left .title {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 35px;
+  margin-left: -5px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+}
+
+.content-left .description {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  font-size: 17px;
+  opacity: 1;
+}
+
+nav {
   margin-top: 20px;
 }
 
-.left .profile-image img {
-  object-fit: cover;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  display: flex;
+nav .nav-link {
+  padding-top: 30px;
+  font-size: 18px;
+}
+
+nav .nav-link a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 0;
+}
+
+nav .nav-link a:hover {
+  opacity: 0.8;
 }
 
 .left .social {
+  margin-top: 70px;
   display: flex;
+}
+
+.left .social .mediaDiv {
+  padding: 0 10px;
+}
+.left .social .mediaDiv i {
+  font-size: 30px;
+}
+
+.left .social .mediaDiv a:hover {
+  opacity: 0.8;
+}
+
+.fa-linkedin {
+  color: #007bbe;
+}
+
+.fa-github {
+  color: #fafafa;
+}
+
+.fa-stack-overflow {
+  color: #e87922;
+}
+
+.fa-hackerrank {
+  color: #1ba455;
+}
+
+.fa-medium {
+  color: rebeccapurple;
 }
 /* container-left end */
