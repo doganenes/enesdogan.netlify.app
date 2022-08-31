@@ -65,13 +65,9 @@ body {
   opacity: 1;
 }
 
-nav {
-  margin-top: 20px;
-}
-
 nav .nav-link {
-  padding-top: 30px;
-  font-size: 18px;
+  padding-top: 40px;
+  font-size: 20px;
 }
 
 nav .nav-link a {
@@ -93,6 +89,7 @@ nav .nav-link a:hover {
 .left .social .mediaDiv {
   padding: 0 10px;
 }
+
 .left .social .mediaDiv i {
   font-size: 30px;
 }
@@ -124,4 +121,5 @@ nav .nav-link a:hover {
 .fa-medium {
   color: rebeccapurple;
 }
+
 /* container-left end */
