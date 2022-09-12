@@ -1,127 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-*::before,
-*,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  height: 1100px;
+  background-color: rgb(242, 242, 242);
 }
 
-.container {
+/* header start */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1f1f22;
   width: 100vw;
-  height: 100vh;
-}
-
-/* container left start */
-.container .left {
-  width: 20%;
-  height: 100vh;
-  background: rgba(31, 31, 34, 1);
+  height: 4rem;
+  padding-top: 0.6rem;
   position: fixed;
 }
 
-.container .left .content-left {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  align-items: center;
-  position: relative;
-}
-
-.content-left .profile-image {
-  width: 250px;
-  border-radius: 50%;
-  display: flex;
-  border: 0.5px solid black;
-  object-fit: cover;
-  display: flex;
-  margin-left: 30px;
-}
-
-.profile-image img {
-  width: 250px;
-}
-
-.content-left .title {
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  font-size: 35px;
-  margin-left: -5px;
-  letter-spacing: 0.2px;
-  font-weight: bold;
-}
-
-.content-left .description {
-  text-align: center;
-  color: white;
-  margin-top: 20px;
-  font-size: 17px;
-  opacity: 1;
+header .title {
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  padding-top: 0.2rem;
+  letter-spacing: 0.6px;
 }
 
 nav {
-  margin-top: 20px;
-}
-
-nav .nav-link {
-  padding-top: 30px;
-  font-size: 18px;
-}
-
-nav .nav-link a {
-  text-decoration: none;
-  color: white;
-  padding: 15px 0;
-  transition: opacity 0.3s ease-out;
-}
-
-nav .nav-link a:hover {
-  opacity: 0.8;
-}
-
-.left .social {
-  margin-top: 70px;
   display: flex;
+  padding-right: 1rem;
 }
 
-.left .social .mediaDiv {
-  padding: 0 10px;
-}
-.left .social .mediaDiv i {
-  font-size: 30px;
+.nav-link {
+  color: white;
+  font-size: 1.3rem;
 }
 
-.left .social .mediaDiv a {
-  transition: opacity 0.3s ease-out;
+.nav-link a {
+  text-decoration: none;
+  letter-spacing: 0.6px;
+  transition: 0.4s ease-out;
 }
 
-.left .social .mediaDiv a:hover {
-  opacity: 0.8;
+.nav-link a:hover {
+  opacity: 0.7;
 }
-
-.fa-linkedin {
-  color: #007bbe;
-}
-
-.fa-github {
-  color: #fafafa;
-}
-
-.fa-stack-overflow {
-  color: #e87922;
-}
-
-.fa-hackerrank {
-  color: #1ba455;
-}
-
-.fa-medium {
-  color: rebeccapurple;
-}
-/* container-left end */
+/* header end */
