@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 
 * {
   margin: 0;
@@ -8,8 +9,8 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  height: 1100px;
   background-color: rgb(242, 242, 242);
+  /* font-family: 'Kalam', cursive; */
 }
 
 /* header start */
@@ -44,10 +45,82 @@ nav {
 .nav-link a {
   text-decoration: none;
   letter-spacing: 0.6px;
-  transition: 0.4s ease-out;
+  transition: 0.4s ease-in-out;
 }
 
 .nav-link a:hover {
   opacity: 0.7;
 }
+
+.profile-image {
+  width: 20rem;
+  height: 20rem;
+}
 /* header end */
+
+/* .content-1 start */
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding-top: 3rem;
+}
+
+.col .infoText {
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.col .infoText p {
+  font-size: 1.2rem;
+}
+
+.infoText p:first-child {
+  font-size: 1.6rem !important;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.social .mediaDiv {
+  padding: 0 1rem;
+  font-size: 2.5rem;
+}
+
+.social .mediaDiv i {
+  transition: 0.4s ease-out;
+}
+
+.fa-linkedin {
+  color: #007bbe;
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-stack-overflow {
+  color: #e87922;
+}
+
+.fa-hackerrank {
+  color: #1ba455;
+}
+
+.fa-medium {
+  color: rebeccapurple;
+}
+
+.mediaDiv i:hover {
+  opacity: 0.7;
+}
+
+/* .content-1 end */
