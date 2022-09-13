@@ -151,4 +151,22 @@ nav {
 .card:hover {
   background-color: #e1e1e2;
 }
-/* content-2  end*/
+/* content-2 end*/
+
+/* content-3 start */
+/* content-3 end */
+
+/* media queries start */
+@media (max-width: 768px) {
+  header .title,
+  .nav-link {
+    font-size: 1rem;
+  }
+  header .title {
+    margin-top: 0.4rem;
+  }
+  .title-card{
+    font-size: 1.5rem;
+  }
+}
+/* media queries end */
