@@ -30,6 +30,7 @@ header .title {
   font-size: 1.5rem;
   padding-top: 0.2rem;
   letter-spacing: 0.6px;
+  text-align: center;
 }
 
 nav {
@@ -60,14 +61,17 @@ nav {
 
 /* .content-1 start */
 
+.content-1 {
+  padding-top: 2rem;
+}
+
 .col {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100%;
-  padding-top: 3rem;
+  width: 100vw;
 }
 
 .col .infoText {
@@ -87,7 +91,7 @@ nav {
 .social {
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .social .mediaDiv {
@@ -124,3 +128,27 @@ nav {
 }
 
 /* .content-1 end */
+
+/* content-2  start*/
+.title-card {
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  padding-top: 0.2rem;
+  letter-spacing: 0.6px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.card {
+  transition: 0.3s ease-out;
+}
+
+.card:hover {
+  background-color: #e1e1e2;
+}
+/* content-2  end*/
