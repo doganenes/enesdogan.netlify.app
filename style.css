@@ -23,22 +23,28 @@ header {
   justify-content: space-between;
   background-color: #1f1f22;
   width: 100vw;
-  height: 4rem;
+  height: 5rem;
   padding-top: 0.6rem;
   position: fixed;
   z-index: 100;
+  text-transform: uppercase;
 }
 
 header .title {
   padding-left: 2rem;
-  padding-top: 0.2rem;
+  padding-top: 0.7rem;
   font-size: 1.5rem;
   letter-spacing: 0.6px;
   text-align: center;
 }
 
+.menu-btn {
+  display: none;
+}
+
 nav {
   display: flex;
+  padding-top: 0.5rem;
   padding-right: 1rem;
 }
 
@@ -61,6 +67,7 @@ nav {
   width: 20rem;
   height: 20rem;
 }
+
 /* header end */
 
 /* .content-1 start */
@@ -91,6 +98,14 @@ nav {
 
 .infoText p:first-child {
   font-size: 1.6rem !important;
+}
+
+.profile-image {
+  transition: 0.6s ease-in-out;
+}
+
+.profile-image:hover {
+  transform: scale(1.15);
 }
 
 .social {
@@ -136,19 +151,18 @@ nav {
 
 /* content-2  start*/
 .content-2 {
-  background-color: #fd8a8e;
+  background-color: #f6a6a9;
 }
+
 .title-card {
   padding-left: 2rem;
   font-size: 1.5rem;
   padding-top: 0.2rem;
   letter-spacing: 0.6px;
-  text-align: center;
   font-weight: bold;
   font-size: 2rem;
   font-family: "Kalam", sans-serif;
-  color: rebeccapurple;
-  /* border-bottom: 0.15rem solid rebeccapurple; */
+  color: #007bbe;
 }
 
 .cursor-pointer {
@@ -162,12 +176,14 @@ nav {
 .card:hover {
   background-color: #e1e1e2;
 }
+
 /* content-2 end*/
 
 /* content-3 start */
 .content-3 {
   background-color: #c5e6fb;
 }
+
 .col .title {
   font-size: 2rem;
   border-bottom: 0.15rem solid #1f1f22;
@@ -206,6 +222,7 @@ textarea {
   width: 20rem;
   border: 2px solid gray;
 }
+
 /* content-3 end */
 
 /* footer start */
@@ -214,30 +231,105 @@ footer {
   border-top: 0.2rem solid #1f1f22;
   background-color: #c5e6fb;
 }
+
 /* footer end */
 
 /* media queries start */
 @media (max-width: 768px) {
-  nav {
-    display: none;
-  }
   html {
     font-size: 14px;
   }
-  header {
-    padding-top: 0.7rem;
+
+  /* animated hamburger menu start */
+  .menu-btn {
+    margin-top: 0.8rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 2.3rem;
+    cursor: pointer;
+    margin-right: 1.9rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger {
+    width: 3rem;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger::before {
+    transform: translateY(-16px);
+  }
+
+  .menu-btn__burger::after {
+    transform: translateY(16px);
+  }
+
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  /* animated hamburger menu end */
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #1f1f22;
+    position: fixed;
+    top: 0;
+    right: -6rem;
+    width: 300px;
+    height: 100%;
+    padding-top: 65px;
+  }
+
+  nav .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-right: 20%;
+  }
+
+  .active {
+    display: flex;
   }
 
   header .title {
-    padding-top: 0.3rem;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 
   .infoText .info {
     font-size: 0.5rem;
-  }
-
-  .card {
   }
 
   .title-card {
@@ -248,6 +340,10 @@ footer {
     font-size: 1.15rem;
     text-align: center;
     display: block;
+  }
+
+  .title-card {
+    font-size: 1.78rem;
   }
 
   .buttonTD {

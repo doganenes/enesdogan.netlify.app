@@ -13,6 +13,9 @@ let card4 = document.querySelector(".card-4");
 let card5 = document.querySelector(".card-5");
 let card6 = document.querySelector(".card-6");
 
+const menuBtn = document.querySelector(".menu-btn");
+let menuOpen = false;
+
 // eventListeners
 card1.addEventListener("click", () => {
   window.open(link1);
@@ -31,4 +34,19 @@ card5.addEventListener("click", () => {
 });
 card6.addEventListener("click", () => {
   window.open(link6);
+});
+
+menuBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+  }
+});
+
+const navTag = document.querySelector(".navTag");
+menuBtn.addEventListener("click", () => {
+  navTag.classList.toggle("active");
 });
