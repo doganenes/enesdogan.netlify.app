@@ -7,10 +7,13 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 15px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: rgb(242, 242, 242);
-  /* font-family: 'Kalam', cursive; */
 }
 
 /* header start */
@@ -23,12 +26,13 @@ header {
   height: 4rem;
   padding-top: 0.6rem;
   position: fixed;
+  z-index: 100;
 }
 
 header .title {
   padding-left: 2rem;
-  font-size: 1.5rem;
   padding-top: 0.2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.6px;
   text-align: center;
 }
@@ -63,6 +67,7 @@ nav {
 
 .content-1 {
   padding-top: 2rem;
+  background-color: #9ff4a7;
 }
 
 .col {
@@ -120,7 +125,7 @@ nav {
 }
 
 .fa-medium {
-  color: rebeccapurple;
+  color: #f9b909;
 }
 
 .mediaDiv i:hover {
@@ -130,6 +135,9 @@ nav {
 /* .content-1 end */
 
 /* content-2  start*/
+.content-2 {
+  background-color: #fd8a8e;
+}
 .title-card {
   padding-left: 2rem;
   font-size: 1.5rem;
@@ -138,6 +146,9 @@ nav {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
+  font-family: "Kalam", sans-serif;
+  color: rebeccapurple;
+  /* border-bottom: 0.15rem solid rebeccapurple; */
 }
 
 .cursor-pointer {
@@ -154,19 +165,94 @@ nav {
 /* content-2 end*/
 
 /* content-3 start */
+.content-3 {
+  background-color: #c5e6fb;
+}
+.col .title {
+  font-size: 2rem;
+  border-bottom: 0.15rem solid #1f1f22;
+}
+
+table {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+td {
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+td:last-child {
+  display: flex;
+}
+
+td:last-child .btn {
+  margin: 0 0.1rem;
+}
+
+td:nth-child(2n) {
+  margin-left: 0.5rem;
+}
+
+table input {
+  width: 20rem;
+  border: 2px solid gray;
+}
+
+textarea {
+  width: 20rem;
+  border: 2px solid gray;
+}
 /* content-3 end */
+
+/* footer start */
+footer {
+  bottom: 0;
+  border-top: 0.2rem solid #1f1f22;
+  background-color: #c5e6fb;
+}
+/* footer end */
 
 /* media queries start */
 @media (max-width: 768px) {
-  header .title,
-  .nav-link {
-    font-size: 1rem;
+  nav {
+    display: none;
   }
+  html {
+    font-size: 14px;
+  }
+  header {
+    padding-top: 0.7rem;
+  }
+
   header .title {
-    margin-top: 0.4rem;
+    padding-top: 0.3rem;
+    font-size: 1.4rem;
   }
-  .title-card{
+
+  .infoText .info {
+    font-size: 0.5rem;
+  }
+
+  .card {
+  }
+
+  .title-card {
     font-size: 1.5rem;
+  }
+
+  table td {
+    font-size: 1.15rem;
+    text-align: center;
+    display: block;
+  }
+
+  .buttonTD {
+    display: flex;
+    justify-content: center;
   }
 }
 /* media queries end */

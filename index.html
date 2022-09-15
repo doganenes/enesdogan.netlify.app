@@ -43,23 +43,25 @@
     </header>
     <div class="container-fluid">
       <!-- content-1 start -->
-      <div class="row content-1 h-100 w-100" id="about">
-        <div class="col">
+      <div class="row content-1 h-100" id="about">
+        <div class="col pt-3">
           <div class="imageBox">
-            <img class="profile-image" src="img/profile.png" alt="" />
+            <img class="profile-image" src="img/profile.png" alt="profile" />
           </div>
           <div class="infoText">
-            <p>Hi, my name is Enes Doğan. <span id="icon">🖐️</span></p>
-            <p>
+            <p class="info text-center">
+              Hi <span id="icon">🖐️</span>, I am Enes Doğan.
+            </p>
+            <p class="info-text-center mt-4 pt-2">
               I am a 2nd year Computer Engineering student at Manisa Celal Bayar
               University.
             </p>
-            <p>
-              I am interested in Frontend technologies. My goal is to be a Full
-              stack developer.
+            <p class="info text-center">
+              I am interested in Frontend Technologies. My goal is to be a Full
+              Stack Developer.
             </p>
           </div>
-          <div class="social">
+          <div class="social mt-3">
             <div class="mediaDiv">
               <a href="https://www.linkedin.com/in/doganenes/" target="_blank">
                 <i class="fa-brands fa-linkedin"></i
@@ -95,12 +97,12 @@
         </div>
       </div>
       <!-- content-2 start -->
-      <div class="row content-2 h-100" id="projects">
-        <div class="title-card text-info pt-5 pb-3">
+      <div class="row content-2 h-100 pt-4 pb-5" id="projects">
+        <div class="title-card mt-5 pb-2 text-center fw-bold">
           These are some of my projects:
         </div>
         <div class="col-sm-4">
-          <div class="card card-1 cursor-pointer pb-3 rounded">
+          <div class="card card-1 cursor-pointer mt-3 rounded">
             <div class="card-header">
               <img class="img-fluid img-thumbnail" src="img/img1.png" />
             </div>
@@ -108,7 +110,7 @@
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card card-2 cursor-pointer rounded">
+          <div class="card card-2 cursor-pointer mt-3 rounded">
             <div class="card-header">
               <img class="img-fluid" src="img/img2.png" />
             </div>
@@ -116,7 +118,7 @@
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card card-3 cursor-pointer rounded">
+          <div class="card card-3 mt-3 cursor-pointer rounded">
             <div class="card-header">
               <img class="img-fluid img-thumbnail" src="img/img3.png" />
             </div>
@@ -124,7 +126,7 @@
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card card-4 cursor-pointer rounded">
+          <div class="card card-4 mt-3 cursor-pointer rounded">
             <div class="card-header">
               <img class="img-fluid img-thumbnail" src="img/img4.png" />
             </div>
@@ -132,7 +134,7 @@
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card card-5 cursor-pointer rounded">
+          <div class="card card-5 mt-3 cursor-pointer rounded">
             <div class="card-header">
               <img class="img-fluid img-thumbnail" src="img/img5.png" />
             </div>
@@ -140,23 +142,72 @@
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card card-6 cursor-pointer">
+          <div class="card mt-3 card-6 cursor-pointer">
             <div class="card-header">
               <img class="img-fluid img-thumbnail" src="img/img6.png" />
             </div>
             <div class="card-body text-center">Survey Form</div>
           </div>
         </div>
-        <div class="col-12 text-center pt-3">
+        <div class="col-12 text-center pt-4 mt-5">
           <a
             href="https://github.com/doganenes"
             target="_blank"
-            class="btn btn-primary"
-            >Show All <span class="mb-5">></span></a
+            class="btn btn-lg btn-primary"
+            >Show All <span class="">></span></a
           >
         </div>
       </div>
       <!-- content-2 end -->
+
+      <!-- content-3 start -->
+      <div class="row content-3" id="contact">
+        <div class="col">
+          <div class="title text-center text-dark fw-bold">Contact with Me</div>
+          <div>
+            <form
+              action="https://formsubmit.co/enesdogandigital@gmail.com"
+              method="POST"
+            >
+              <table>
+                <tr>
+                  <td>Name Surname:</td>
+                  <td><input type="text" required /></td>
+                </tr>
+                <tr>
+                  <td>Message:</td>
+                  <td><textarea cols="30" rows="10" required></textarea></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="buttonTD">
+                    <button class="btn btn-success mx-1" type="submit">
+                      Send
+                    </button>
+                    <button class="btn btn-danger mx-1" type="reset">
+                      Reset
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <input type="hidden" name="_next" value="thanks.html" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="Woohoo! New Message"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- content-3 end -->
+      <div class="row">
+        <footer class="p-3">
+          <p class="text-center mt-3 fs-5">
+            Designed by Enes Doğan | &copy;2022
+          </p>
+        </footer>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
