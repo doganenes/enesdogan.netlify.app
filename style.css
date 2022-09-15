@@ -36,6 +36,11 @@ header .title {
   font-size: 1.5rem;
   letter-spacing: 0.6px;
   text-align: center;
+  transition: 0.4s ease-in-out;
+}
+
+header .title:hover {
+  opacity: 0.7;
 }
 
 .menu-btn {
@@ -160,7 +165,6 @@ nav {
   padding-top: 0.2rem;
   letter-spacing: 0.6px;
   font-weight: bold;
-  font-size: 2rem;
   font-family: "Kalam", sans-serif;
   color: #007bbe;
 }
@@ -198,6 +202,7 @@ table {
 
 td {
   padding: 0.5rem 0;
+  margin: 0 0.5rem;
   font-size: 1.4rem;
 }
 
@@ -207,10 +212,6 @@ td:last-child {
 
 td:last-child .btn {
   margin: 0 0.1rem;
-}
-
-td:nth-child(2n) {
-  margin-left: 0.5rem;
 }
 
 table input {
@@ -330,10 +331,6 @@ footer {
 
   .infoText .info {
     font-size: 0.5rem;
-  }
-
-  .title-card {
-    font-size: 1.5rem;
   }
 
   table td {

@@ -28,8 +28,12 @@
 
   <body>
     <header>
-      <div class="title text-light">Enes Doğan</div>
-      <nav class="mx-2 navTag">
+      <div class="title">
+        <a class="text-decoration-none text-light" href="index.html"
+          >Enes Doğan</a
+        >
+      </div>
+      <nav class="mx-3 navTag">
         <div class="nav-link">
           <a class="text-light" href="#about">About</a>
         </div>
@@ -54,11 +58,11 @@
             <img class="profile-image" src="img/profile.png" alt="profile" />
           </div>
           <div class="infoText">
-            <p class="info text-center">
+            <p class="info text-center fw-bold">
               Hi <span id="icon">🖐️</span>, I am Enes Doğan.
             </p>
             <p class="info-text-center mt-4 pt-2">
-              I am a 2nd Grade Computer Engineering student at Manisa Celal
+              I am a 2nd Grade Computer Engineering Student at Manisa Celal
               Bayar University.
             </p>
             <p class="info text-center">
@@ -103,13 +107,17 @@
       </div>
       <!-- content-2 start -->
       <div class="row content-2 h-100 pt-4 pb-5" id="projects">
-        <div class="title-card mt-5 pb-2 text-center fw-bold">
+        <div class="title-card mt-5 pb-2 text-center fw-bold fs-2">
           These are some of my projects:
         </div>
         <div class="col-sm-4">
           <div class="card card-1 cursor-pointer mt-3 rounded">
             <div class="card-header">
-              <img class="img-fluid img-thumbnail" src="img/img1.png" />
+              <img
+                class="img-fluid img-thumbnail"
+                src="img/img1.png"
+                alt="Todo App"
+              />
             </div>
             <div class="card-body text-center">Todo App</div>
           </div>
@@ -117,7 +125,7 @@
         <div class="col-sm-4">
           <div class="card card-2 cursor-pointer mt-3 rounded">
             <div class="card-header">
-              <img class="img-fluid" src="img/img2.png" />
+              <img class="img-fluid" src="img/img2.png" alt="Medium Clone" />
             </div>
             <div class="card-body text-center">Medium Clone</div>
           </div>
@@ -125,7 +133,11 @@
         <div class="col-sm-4">
           <div class="card card-3 mt-3 cursor-pointer rounded">
             <div class="card-header">
-              <img class="img-fluid img-thumbnail" src="img/img3.png" />
+              <img
+                class="img-fluid img-thumbnail"
+                src="img/img3.png"
+                alt="Kitchen Menu"
+              />
             </div>
             <div class="card-body text-center">Kitchen Menu</div>
           </div>
@@ -133,7 +145,11 @@
         <div class="col-sm-4">
           <div class="card card-4 mt-3 cursor-pointer rounded">
             <div class="card-header">
-              <img class="img-fluid img-thumbnail" src="img/img4.png" />
+              <img
+                class="img-fluid img-thumbnail"
+                src="img/img4.png"
+                alt="Personal Portfolio"
+              />
             </div>
             <div class="card-body text-center">Personal Portfolio</div>
           </div>
@@ -141,7 +157,11 @@
         <div class="col-sm-4">
           <div class="card card-5 mt-3 cursor-pointer rounded">
             <div class="card-header">
-              <img class="img-fluid img-thumbnail" src="img/img5.png" />
+              <img
+                class="img-fluid img-thumbnail"
+                src="img/img5.png"
+                alt="Technical Documentation Page"
+              />
             </div>
             <div class="card-body text-center">Techinal Documentation Page</div>
           </div>
@@ -149,7 +169,11 @@
         <div class="col-sm-4">
           <div class="card mt-3 card-6 cursor-pointer">
             <div class="card-header">
-              <img class="img-fluid img-thumbnail" src="img/img6.png" />
+              <img
+                class="img-fluid img-thumbnail"
+                src="img/img6.png"
+                alt="Survey Form"
+              />
             </div>
             <div class="card-body text-center">Survey Form</div>
           </div>
@@ -174,32 +198,39 @@
               action="https://formsubmit.co/enesdogandigital@gmail.com"
               method="POST"
             >
-              <table>
+              <table class="table">
                 <tr>
-                  <td>Name Surname:</td>
-                  <td><input type="text" required /></td>
+                  <td class="text-center fs-4">Name:</td>
+                  <td><input class="p-1" type="text" required /></td>
                 </tr>
                 <tr>
-                  <td>Email:</td>
-                  <td><input type="email" required /></td>
+                  <td class="text-center fs-4">Email:</td>
+                  <td><input class="p-1" type="email" required /></td>
                 </tr>
                 <tr>
-                  <td>Message:</td>
-                  <td><textarea cols="30" rows="5" required></textarea></td>
+                  <td class="text-center fs-4">Message:</td>
+                  <td>
+                    <textarea
+                      cols="30"
+                      rows="5"
+                      maxlength=""
+                      required
+                    ></textarea>
+                  </td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td class="buttonTD">
-                    <button class="btn btn-success mx-1" type="submit">
+                  <td class="buttonTD mt-2">
+                    <button class="btn btn-lg btn-success mx-1" type="submit">
                       Send
                     </button>
-                    <button class="btn btn-danger mx-1" type="reset">
+                    <button class="btn btn-lg btn-danger mx-1" type="reset">
                       Reset
                     </button>
                   </td>
                 </tr>
               </table>
-              <input type="hidden" name="_next" value="thanks.html" />
+              <input type="hidden" name="_next" value="./thanks.html" />
               <input
                 type="hidden"
                 name="_subject"
