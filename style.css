@@ -182,6 +182,10 @@ nav {
   background-color: #e1e1e2;
 }
 
+.card-button:hover {
+  transition: 0.6s ease-out;
+}
+
 /* content-2 end*/
 
 /* content-3 start */
@@ -224,7 +228,6 @@ textarea {
   width: 20rem;
   border: 2px solid gray;
 }
-
 /* content-3 end */
 
 /* footer start */
@@ -325,7 +328,7 @@ footer {
   .active {
     display: flex;
   }
-
+  
   header .title {
     font-size: 1.7rem;
   }

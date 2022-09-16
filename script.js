@@ -1,4 +1,4 @@
-// addEventListener Selectors
+// Selectors
 let link1 = "https://todoapp-website.netlify.app/";
 let link2 = "https://medium-clone-bootstrap.vercel.app/";
 let link3 = "https://kitchen-menu-website.netlify.app/";
@@ -16,7 +16,7 @@ let card6 = document.querySelector(".card-6");
 const menuBtn = document.querySelector(".menu-btn");
 let menuOpen = false;
 
-// eventListeners
+// addEventListeners
 card1.addEventListener("click", () => {
   window.open(link1);
 });
