@@ -1,4 +1,3 @@
-<br/>
 <div align='center'>
 <h2 align='center'>Web Design</h2>
 <img src='https://user-images.githubusercontent.com/86846812/190614276-0fc27415-e3dd-4901-a591-8e99ae6ea7e3.png'>
@@ -13,6 +12,7 @@
 <br/>
 </div>
 
-
-You can clone my portfolio website project with using: 
-`git clone https://github.com/doganenes/enesdogan.netlify.app.git`
+<div align='center'>
+<h3>You can clone my portfolio website project with using:</h3>
+<code>git clone https://github.com/doganenes/enesdogan.netlify.app.git</code>
+</div>
